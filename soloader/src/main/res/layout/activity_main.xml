@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<androidx.core.weight.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="site.duqian.soloader.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <androidx.core.weight.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -19,11 +19,11 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-    </android.support.design.widget.AppBarLayout>
+    </androidx.core.weight.AppBarLayout>
 
     <include layout="@layout/content_main"/>
 
-    <android.support.design.widget.FloatingActionButton
+    <androidx.core.weight.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,4 +31,4 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email"/>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.core.weight.CoordinatorLayout>
