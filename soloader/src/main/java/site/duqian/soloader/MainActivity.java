@@ -20,9 +20,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import com.silvrr.libsoloader.LoadLibraryUtil;
-import com.silvrr.libsoloader.SoFileLoadManager;
-import com.silvrr.libsoloader.SoUtils;
+
+import com.hss01248.soload.LoadLibraryUtil;
+import com.hss01248.soload.SoFileLoadManager;
+import com.hss01248.soload.SoUtils;
 import site.duqian.so.loader.R;
 
 import java.io.File;

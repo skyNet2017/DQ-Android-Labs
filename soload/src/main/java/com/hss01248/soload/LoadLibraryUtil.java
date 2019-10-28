@@ -1,4 +1,4 @@
-package com.silvrr.libsoloader;
+package com.hss01248.soload;
 
 import android.annotation.TargetApi;
 import android.os.Build;

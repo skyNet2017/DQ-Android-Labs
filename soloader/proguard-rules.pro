@@ -21,8 +21,8 @@
 #-renamesourcefileattribute SourceFile
 
 #so动态加载
--keep class com.silvrr.libsoloader.LoadLibraryUtil.** { *; }
--keep class com.silvrr.libsoloader.ReflectUtil.** { *; }
+-keep class com.hss01248.soload.LoadLibraryUtil.** { *; }
+-keep class com.hss01248.soload.ReflectUtil.** { *; }
 
 -dontwarn com.tencent.bugly.**
 -keep public class com.tencent.bugly.**{*;}
