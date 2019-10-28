@@ -19,10 +19,3 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-
-#so动态加载
--keep class com.silvrr.libsoloader.LoadLibraryUtil.** { *; }
--keep class com.silvrr.libsoloader.ReflectUtil.** { *; }
-
--dontwarn com.tencent.bugly.**
--keep public class com.tencent.bugly.**{*;}

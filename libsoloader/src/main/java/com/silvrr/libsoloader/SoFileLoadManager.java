@@ -1,4 +1,4 @@
-package site.duqian.soloader;
+package com.silvrr.libsoloader;
 
 import android.content.Context;
 import android.util.Log;
@@ -30,6 +30,7 @@ public class SoFileLoadManager {
             }
             LoadLibraryUtil.installNativeLibraryPath(context.getApplicationContext().getClassLoader(), dir);
         } catch (Throwable throwable) {
+            throwable.printStackTrace();
             Log.e("dq", "loadSoFile error " + throwable.getMessage());
         }
     }

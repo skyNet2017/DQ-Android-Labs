@@ -1,4 +1,4 @@
-package site.duqian.soloader;
+package com.silvrr.libsoloader;
 
 import android.content.Context;
 import android.util.Log;
@@ -15,7 +15,7 @@ import java.lang.ref.WeakReference;
  * @author Dusan, Created on 2019/3/15 - 16:29.
  * E-mail:duqian2010@gmail.com
  */
-public class LocalSoHelper {
+ class LocalSoHelper {
     private static final String TARGET_LIBS_NAME = "test_libs";
 
     private static volatile LocalSoHelper instance;

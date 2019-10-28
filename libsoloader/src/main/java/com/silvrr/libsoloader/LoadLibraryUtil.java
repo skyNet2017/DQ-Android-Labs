@@ -1,4 +1,4 @@
-package site.duqian.soloader;
+package com.silvrr.libsoloader;
 
 import android.annotation.TargetApi;
 import android.os.Build;

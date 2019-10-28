@@ -1,17 +1,18 @@
 apply plugin: 'com.android.application'
 //这里是本人的签名配置，运行前请去掉
-Properties props = new Properties()
-props.load(new FileInputStream(file("../local.properties")))
+/*Properties props = new Properties()
+props.load(new FileInputStream(file("../local.properties")))*/
 
 android {
-    signingConfigs {
+    compileSdkVersion 28
+    /*signingConfigs {
         release {
             keyAlias props['KEY_ALIAS']
             keyPassword props['KEY_PASSWORD']
             storeFile file(props['KEYSTORE_FILE'])
             storePassword props['KEYSTORE_PASSWORD']
         }
-    }
+    }*/
     //⤴️这里是本人的签名配置，运行前请去掉
 
     compileSdkVersion 28
@@ -39,12 +40,12 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
     }
 
@@ -71,12 +72,12 @@ android {
         debug {
             minifyEnabled true
             proguardFiles 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
         release {
             minifyEnabled true
             proguardFiles 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
     }
 
@@ -107,4 +108,5 @@ dependencies {
 
     implementation 'com.tencent.bugly:crashreport:2.8.6'
     implementation 'com.tencent.bugly:nativecrashreport:3.6.0'
+    implementation project(':libsoloader')
 }

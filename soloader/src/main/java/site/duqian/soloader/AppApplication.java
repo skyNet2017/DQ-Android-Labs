@@ -1,6 +1,8 @@
 package site.duqian.soloader;
 
 import android.app.Application;
+import com.silvrr.libsoloader.SoFileLoadManager;
+import com.silvrr.libsoloader.SoUtils;
 import com.tencent.bugly.crashreport.CrashReport;
 
 import java.io.File;
